@@ -1,7 +1,8 @@
-import numpy as np
 import matplotlib.pyplot as plt
+import numpy as np
+from matplotlib.ticker import MultipleLocator
 
-data1, data2, data3, data4 = np.loadtxt('data.csv', delimiter=',', skiprows=1, unpack=True)
+data1, data2, data3, data4 = np.loadtxt('discovery-data.csv', delimiter=',', skiprows=1, unpack=True)
 
 x1 = np.sort(data1)
 x2 = np.sort(data2)
@@ -24,7 +25,7 @@ plt.plot(x3, y, label = 'Gateway 3')
 plt.plot(x4, y, label = 'Gateway 4')
 plt.xlabel('Discovery Time (s)')
 plt.ylabel('Cumulative Percentage (%)')
-plt.yticks(range(0,101,10))
+plt.gca().yaxis.set_major_locator(MultipleLocator(10))
 
 plt.xlim(xmin=0, xmax=80)
 plt.ylim(ymin=0, ymax=100)
