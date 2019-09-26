@@ -1,4 +1,4 @@
-#pyplot tutorial
+# pyplot tutorial
 
 Code samples to understand the matplotlib.pyplot interface for plotting figures.
 
