@@ -19,9 +19,9 @@ e.g.: plot, hist, scatter etc.
 - pyplot is an interface which provides MATLAB-like syntax for matplotlib
 - There is a concept of a *current Figure* when using pyplot. If you don't specify any Figure, plt automatically creates a Figure (figure with index 1) and all further operations are performed on it.
 - Any operation is performed on the current Figure and the current Axes  
-e.g.: plt.plot()
-- There are certain operations not supported by the pyplot interface. These are operations that you can be perform on the Figure object or the Axes object. You can access the current Figure or the current Axes using plt.gcf() and plt.gca() and operate on them. gcf() stands for "get current figure" and gca stands for "get current axes".  
-e.g.: plt.gca().yaxis.set\_major\_locator(MultipleLocator(10)) accesses the current Axes object, accesses the y-axis Axis object for the Axes, and then sets the major ticks at an interval of 10.
+e.g.: ```plt.plot()```
+- There are certain operations not supported by the pyplot interface. These are operations that you can be perform on the Figure object or the Axes object. You can access the current Figure or the current Axes using ```plt.gcf()``` and ```plt.gca()``` and operate on them. gcf() stands for "get current figure" and gca stands for "get current axes".  
+e.g.: ```plt.gca().yaxis.set\_major\_locator(MultipleLocator(10))``` accesses the current Axes object, accesses the y-axis Axis object for the Axes, and then sets the major ticks at an interval of 10.
 
 ### References
 Most of the code samples are taken from this [excellent matplotlib tutorial](https://towardsdatascience.com/matplotlib-tutorial-learn-basics-of-pythons-powerful-plotting-library-b5d1b8f67596)  
