@@ -2,11 +2,11 @@
 
 Code samples to understand the matplotlib.pyplot interface for plotting figures.
 
-####Terminology
+#### Terminology
 This picture from the usage guide describes all of the major elements in a matplotlib plot:
 ![alt text](https://matplotlib.org/3.1.1/_images/anatomy.png)
 
-####References
+#### References
 Most of the code samples are taken from this [excellent matplotlib tutorial](https://towardsdatascience.com/matplotlib-tutorial-learn-basics-of-pythons-powerful-plotting-library-b5d1b8f67596)  
 [matplotlib Usage Guide](https://matplotlib.org/3.1.1/tutorials/introductory/usage.html)  
 [Difference between drawing plots using plot, axes, and figure in matplotlib?](https://stackoverflow.com/questions/37970424/what-is-the-difference-between-drawing-plots-using-plot-axes-or-figure-in-matpl)  
