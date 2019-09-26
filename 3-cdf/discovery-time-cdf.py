@@ -10,7 +10,7 @@ x3 = np.sort(data3)
 x4 = np.sort(data4)
 
 #y = [1/N, 2/N ... 1]
-y = np.arange(1, len(x1) + 1) / len(x1)
+y = np.arange(1, len(x1) + 1) / len(x1) #[1..n] / n
 y = y *100
 
 print(x1)
