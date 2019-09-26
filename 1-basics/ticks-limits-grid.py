@@ -2,9 +2,12 @@ import matplotlib.pyplot as plt
 from matplotlib.ticker import (MultipleLocator, FormatStrFormatter,
                                AutoMinorLocator)
 
+#set figure size to 5in x 5in. Defaults to 6.4 x 4.8
+plt.figure(figsize=(5, 5))
+
 x1=[1,2,3,4,5]
 y1=[70,40,90,16,25]
-plt.plot(x1, y1, label='plot1', color="orange")
+plt.plot(x1, y1, label='plot1', color="orange", linestyle='--', marker='o')
 
 x1=[1,2,3,4,5]
 y1=[3,40,20,30,75]

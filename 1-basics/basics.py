@@ -1,9 +1,12 @@
 import matplotlib.pyplot as plt
 import matplotlib
 
+#set figure size to 5in x 5in. Defaults to 6.4 x 4.8
+plt.figure(figsize=(5, 5))
+
 x1=[1,2,3,4,5]
 y1=[70,40,90,16,25]
-plt.plot(x1, y1, label='plot1', color="orange")
+plt.plot(x1, y1, label='plot1', color="orange", linestyle='--', marker='o')
 
 x1=[1,2,3,4,5]
 y1=[3,40,20,30,75]
@@ -19,9 +22,5 @@ plt.legend()
 #use interactive mode
 plt.show()
 
-# width, height in inches. If not provided, defaults to rcParams["figure.figsize"] = [6.4, 4.8]
-#adjust figure size
-# plt.figure(figsize=(15, 10))
-
 #export as pdf
-#plt.savefig('basics.pdf')
+# plt.savefig('basics.pdf')
